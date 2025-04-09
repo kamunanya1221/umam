@@ -10,8 +10,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #0a0f14; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #0f2943; /* Color for headings, subheadings and title throughout the website */
-  --my-color:#1854b4;
-  --my-bg:#151515;
+  --my-color:#057ff1;
   --accent-color: #e87532; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -133,8 +132,8 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--my-bg);
-  background-color: var(--my-bg);
+  color: var(--default-color);
+  background-color: var(--background-color);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -743,13 +742,12 @@ section,
   font-weight: 550;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  margin-left: 0px;
+  margin-left: 40px;
 }
 
 @media (max-width: 991px) {
   .hero .content h2 {
     font-size: 2.5rem;
-    justify-content: center;
   }
 }
 
@@ -757,7 +755,7 @@ section,
   font-size: 1.25rem;
   margin-bottom: 2rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-left: 0px;
+  margin-left: 40px;
 }
 
 .hero .cta-buttons {
@@ -855,19 +853,19 @@ section,
 }
 
 .hero .hero-image .shape-1 {
-  width: 240px;
-  height: 240px;
+  width: 250px;
+  height: 250px;
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-  top: -15px;
-  right: -7px;
+  top: -20px;
+  right: -20px;
   animation: morphShape 15s linear infinite;
 }
 
 .hero .hero-image .shape-2 {
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
   background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
-  bottom: -12px;
+  bottom: -20px;
   left: -20px;
   animation: morphShape 20s linear infinite reverse;
 }
@@ -1521,7 +1519,7 @@ section,
 
 @media (max-width: 991px) {
   .services h2 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
